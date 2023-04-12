@@ -2,15 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Random Quote Generator</title>
     <script src="index.js" type="module" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <p>Your page will be styled here!</p>
-    <div>Quotes will display here</div>
-    <button>Click me to generate a random quote</button>
+<header>
+    <h1>Random Quote Generator</h1>
+</header>
+<main>
+    <section aria-labelledby="quote-section">
+        <h2 id="quote-section">Random Quote</h2>
+        <blockquote id="quote-text" cite="">
+            Quotes will display here
+        </blockquote>
+        <cite id="quote-author">
+            Author will display here
+        </cite>
+    </section>
+    <section aria-labelledby="button-section">
+        <h2 id="button-section" class="visually-hidden">Generate a Random Quote</h2>
+        <button id="quote-button" aria-label="Click to generate a random quote">
+            Generate Quote
+        </button>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2023 Random Quote Generator. All rights reserved.</p>
+</footer>
 </body>
 </html>
