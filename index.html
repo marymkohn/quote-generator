@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Random Quote Generator</title>
     <script src="index.js" type="module" defer></script>
     <link rel="stylesheet" href="styles.css">
@@ -13,16 +13,16 @@
     <h1>Random Quote Generator</h1>
 </header>
 <main>
-<!--Quote Section-->
-    <section id="quote-section" aria-labelledby="quote-section">
-        <h2>Random Quote</h2>
-        <blockquote id="quote-text" cite="">test</blockquote>
-        <cite id="quote-author">test</cite>
+    <!--Quote Section-->
+    <section aria-labelledby="quote-section" id="quote-section">
+        <blockquote id="quote-text"></blockquote>
+        <cite id="quote-author"></cite>
     </section>
-<!--Button Section-->
-    <section aria-labelledby="button-section">
-        <button id="quote-button" aria-label="Click to generate a random quote">
-            Generate Quote
+    <!--Button Section-->
+    <section aria-labelledby="button-heading">
+        <h2 class="visually-hidden" id="button-heading">Generate Quote</h2>
+        <button aria-label="Click to generate a random quote" id="quote-button">
+            Generate
         </button>
     </section>
 </main>

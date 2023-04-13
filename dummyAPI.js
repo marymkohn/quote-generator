@@ -1,4 +1,6 @@
-const quotes = [
+
+
+export const quotes = [
     {
     "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
     "author": "Thomas Edison"
@@ -61,15 +63,15 @@ const quotes = [
     },
     {
     "text": "Today is the tomorrow we worried about yesterday.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "It's easier to see the mistakes on someone else's paper.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Every man dies. Not every man really lives.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "To lead people walk behind them.",
@@ -109,7 +111,7 @@ const quotes = [
     },
     {
     "text": "The day is already blessed, find peace within it.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "From error to error one discovers the entire truth.",
@@ -145,7 +147,7 @@ const quotes = [
     },
     {
     "text": "From small beginnings come great things.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Learning is a treasure that will follow its owner everywhere",
@@ -333,11 +335,11 @@ const quotes = [
     },
     {
     "text": "It takes both sunshine and rain to make a rainbow.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "A beautiful thing is never perfect.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Only do what your heart tells you.",
@@ -385,7 +387,7 @@ const quotes = [
     },
     {
     "text": "Every new day is another chance to change your life.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Smile, breathe, and go slowly.",
@@ -405,7 +407,7 @@ const quotes = [
     },
     {
     "text": "Some pursue happiness, others create it.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "He that is giddy thinks the world turns round.",
@@ -421,7 +423,7 @@ const quotes = [
     },
     {
     "text": "We do what we do because we believe.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Do one thing every day that scares you.",
@@ -449,7 +451,7 @@ const quotes = [
     },
     {
     "text": "The harder you fall, the higher you bounce.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Trusting our intuition often saves us from disaster.",
@@ -477,7 +479,7 @@ const quotes = [
     },
     {
     "text": "Everyone smiles in the same language.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Yesterday I dared to struggle. Today I dare to win.",
@@ -549,7 +551,7 @@ const quotes = [
     },
     {
     "text": "You can do what's reasonable or you can decide what's possible.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Nothing strengthens authority so much as silence.",
@@ -573,7 +575,7 @@ const quotes = [
     },
     {
     "text": "Friendship isn't a big thing. It's a million little things.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Time is the most valuable thing a man can spend.",
@@ -593,7 +595,7 @@ const quotes = [
     },
     {
     "text": "A good plan today is better than a perfect plan tomorrow.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "If the shoe doesn't fit, must we change the foot?",
@@ -625,7 +627,7 @@ const quotes = [
     },
     {
     "text": "Someone remembers, someone cares; your name is whispered in someone's prayers.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Without faith, nothing is possible. With it, nothing is impossible.",
@@ -637,7 +639,7 @@ const quotes = [
     },
     {
     "text": "Don't be pushed by your problems; be led by your dreams.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Whatever we expect with confidence becomes our own self-fulfilling prophecy.",
@@ -665,7 +667,7 @@ const quotes = [
     },
     {
     "text": "Change your thoughts, change your life!",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Never ignore a gut feeling, but never believe that it's enough.",
@@ -681,7 +683,7 @@ const quotes = [
     },
     {
     "text": "Today is the tomorrow you worried about yesterday.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "There is no way to happiness, happiness is the way.",
@@ -689,11 +691,11 @@ const quotes = [
     },
     {
     "text": "The day always looks brighter from behind a smile.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "A stumble may prevent a fall.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "He who talks more is sooner exhausted.",
@@ -721,7 +723,7 @@ const quotes = [
     },
     {
     "text": "Put your future in good hands your own.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "We choose our destiny in the way we treat others.",
@@ -909,7 +911,7 @@ const quotes = [
     },
     {
     "text": "What you see depends on what you're looking for.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "The heart has its reasons which reason knows not of.",
@@ -937,7 +939,7 @@ const quotes = [
     },
     {
     "text": "Worry gives a small thing a big shadow.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Fears are nothing more than a state of mind.",
@@ -1089,11 +1091,11 @@ const quotes = [
     },
     {
     "text": "To get something you never had, you have to do something you never did.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Be thankful when you don't know something for it gives you the opportunity to learn.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Strength does not come from physical capacity. It comes from an indomitable will.",
@@ -1117,7 +1119,7 @@ const quotes = [
     },
     {
     "text": "Letting go is not the end of the world; it is the beginning of a new life.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "All the great performers I have worked with are fuelled by a personal dream.",
@@ -1161,11 +1163,11 @@ const quotes = [
     },
     {
     "text": "Our greatest glory is not in never failing but rising everytime we fall.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Being right is highly overrated. Even a stopped clock is right twice a day.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "To be upset over what you don't have is to waste what you do have.",
@@ -1185,7 +1187,7 @@ const quotes = [
     },
     {
     "text": "Love is not blind; it simply enables one to see things others fail to see.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Life is a process. We are a process. The universe is a process.",
@@ -1205,7 +1207,7 @@ const quotes = [
     },
     {
     "text": "If you get up one more time than you fall, you will make it through.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "The doors we open and close each day decide the lives we live.",
@@ -1221,7 +1223,7 @@ const quotes = [
     },
     {
     "text": "Don't focus on making the right decision, focus on making the decision the right one.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Everything is perfect in the universe even your desire to improve it.",
@@ -1273,11 +1275,11 @@ const quotes = [
     },
     {
     "text": "Love is just a word until someone comes along and gives it meaning.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "We all have problems. The way we solve them is what makes us different.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "The secret to a rich life is to have more beginnings than endings.",
@@ -1433,7 +1435,7 @@ const quotes = [
     },
     {
     "text": "Invent your world. Surround yourself with people, color, sounds, and work that nourish you.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "It is fatal to enter any war without the will to win it.",
@@ -1561,7 +1563,7 @@ const quotes = [
     },
     {
     "text": "Every day may not be good, but there's something good in every day.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Most folks are about as happy as they make up their minds to be.",
@@ -1573,7 +1575,7 @@ const quotes = [
     },
     {
     "text": "Some people think it's holding that makes one strong sometimes it's letting go.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "It is on our failures that we base a new and different and better success.",
@@ -1665,7 +1667,7 @@ const quotes = [
     },
     {
     "text": "Why worry about things you cannot control when you can keep yourself busy controlling the things that depend on you?",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "When you are content to be simply yourself and don't compare or compete, everybody will respect you.",
@@ -1785,7 +1787,7 @@ const quotes = [
     },
     {
     "text": "It is better to take many small steps in the right direction than to make a great leap forward only to stumble backward.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "If we have a positive mental attitude, then even when surrounded by hostility, we shall not lack inner peace.",
@@ -1885,7 +1887,7 @@ const quotes = [
     },
     {
     "text": "As the rest of the world is walking out the door, your best friends are the ones walking in.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Patience is a virtue but you will never ever accomplish anything if you don't exercise action over patience.",
@@ -1997,7 +1999,7 @@ const quotes = [
     },
     {
     "text": "Why compare yourself with others? No one in the entire world can do a better job of being you than you.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Experience is not what happens to a man. It is what a man does with what happens to him.",
@@ -2005,7 +2007,7 @@ const quotes = [
     },
     {
     "text": "A good teacher is like a candle it consumes itself to light the way for others.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "The only thing to do with good advice is to pass it on. It is never of any use to oneself.",
@@ -2013,7 +2015,7 @@ const quotes = [
     },
     {
     "text": "Life is not measured by the breaths we take, but by the moments that take our breath.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "The smallest flower is a thought, a life answering to some feature of the Great Whole, of whom they have a persistent intuition.",
@@ -2113,7 +2115,7 @@ const quotes = [
     },
     {
     "text": "The real measure of your wealth is how much youd be worth if you lost all your money.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "To keep the body in good health is a duty... otherwise we shall not be able to keep our mind strong and clear.",
@@ -2205,7 +2207,7 @@ const quotes = [
     },
     {
     "text": "Though no one can go back and make a brand new start, anyone can start from now and make a brand new ending.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Mind is everything: muscle, pieces of rubber. All that I am, I am because of my mind.",
@@ -2217,7 +2219,7 @@ const quotes = [
     },
     {
     "text": "A friend is someone who understands your past, believes in your future, and accepts you just the way you are.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "It is one of the blessings of old friends that you can afford to be stupid with them.",
@@ -2313,7 +2315,7 @@ const quotes = [
     },
     {
     "text": "Giving up doesn't always mean you are weak. Sometimes it means that you are strong enough to let go.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Treat people as if they were what they ought to be and you help them to become what they are capable of being.",
@@ -2409,7 +2411,7 @@ const quotes = [
     },
     {
     "text": "Never miss an opportunity to make others happy, even if you have to leave them alone in order to do it.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Give it all you've got because you never know if there's going to be a next time.",
@@ -2469,7 +2471,7 @@ const quotes = [
     },
     {
     "text": "Yesterday is history. Tomorrow is a mystery. And today? Today is a gift that's why they call it the present.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "The only way to tell the truth is to speak with kindness. Only the words of a loving man can be heard.",
@@ -2493,7 +2495,7 @@ const quotes = [
     },
     {
     "text": "When you don't know what you believe, everything becomes an argument. Everything is debatable. But when you stand for something, decisions are obvious.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Intuition is the supra-logic that cuts out all the routine processes of thought and leaps straight from the problem to the answer.",
@@ -2517,7 +2519,7 @@ const quotes = [
     },
     {
     "text": "Every sixty seconds you spend angry, upset or mad, is a full minute of happiness you will never get back.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "This world, after all our science and sciences, is still a miracle; wonderful, inscrutable, magical and more, to whosoever will think of it.",
@@ -2593,7 +2595,7 @@ const quotes = [
     },
     {
     "text": "If we are facing in the right direction, all we have to do is keep on walking.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Remember always that you not only have the right to be an individual, you have an obligation to be one.",
@@ -2665,7 +2667,7 @@ const quotes = [
     },
     {
     "text": "Peace of mind is not the absence of conflict from life, but the ability to cope with it.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Face your deficiencies and acknowledge them; but do not let them master you. Let them teach you patience, sweetness, insight.",
@@ -2821,7 +2823,7 @@ const quotes = [
     },
     {
     "text": "An obstacle may be either a stepping stone or a stumbling block.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "The pain passes, but the beauty remains.",
@@ -2945,7 +2947,7 @@ const quotes = [
     },
     {
     "text": "I've never seen a smiling face that was not beautiful.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "In all things of nature there is something of the marvellous.",
@@ -2981,7 +2983,7 @@ const quotes = [
     },
     {
     "text": "Kindness is the greatest wisdom.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Action will remove the doubts that theory cannot solve.",
@@ -2989,7 +2991,7 @@ const quotes = [
     },
     {
     "text": "Don't miss all the beautiful colors of the rainbow looking for that pot of gold.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Your big opportunity may be right where you are now.",
@@ -3017,11 +3019,11 @@ const quotes = [
     },
     {
     "text": "You don't drown by falling in water. You drown by staying there.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Never be afraid to try, remember... Amateurs built the ark, Professionals built the Titanic.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Correction does much, but encouragement does more.",
@@ -3201,7 +3203,7 @@ const quotes = [
     },
     {
     "text": "A smile is a light in the window of your face to show your heart is at home.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Look forward to spring as a time when you can start to see what nature has to offer once again.",
@@ -3225,7 +3227,7 @@ const quotes = [
     },
     {
     "text": "You may only be someone in the world, but to someone else, you may be the world.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Every artist dips his brush in his own soul, and paints his own nature into his pictures.",
@@ -3293,7 +3295,7 @@ const quotes = [
     },
     {
     "text": "A bend in the road is not the end of the road...unless you fail to make the turn.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
@@ -3321,7 +3323,7 @@ const quotes = [
     },
     {
     "text": "One who asks a question is a fool for five minutes; one who does not ask a question remains a fool forever.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "The power of intuitive understanding will protect you from harm until the end of your days.",
@@ -3397,7 +3399,7 @@ const quotes = [
     },
     {
     "text": "Courage is the discovery that you may not win, and trying when you know you can lose.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "To be thoughtful and kind only takes a few seconds compared to the timeless hurt caused by one rude gesture.",
@@ -3801,7 +3803,7 @@ const quotes = [
     },
     {
     "text": "A good rest is half the work.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Don't judge each day by the harvest you reap but by the seeds that you plant.",
@@ -3861,7 +3863,7 @@ const quotes = [
     },
     {
     "text": "All the flowers of all the tomorrows are in the seeds of today.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Your sacred space is where you can find yourself again and again.",
@@ -3925,7 +3927,7 @@ const quotes = [
     },
     {
     "text": "A man is not where he lives but where he loves.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "The price of greatness is responsibility.",
@@ -3941,7 +3943,7 @@ const quotes = [
     },
     {
     "text": "The world does not happen to you it happens from you.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "We cannot solve our problems with the same thinking we used when we created them.",
@@ -3949,7 +3951,7 @@ const quotes = [
     },
     {
     "text": "More powerful than the will to win is the courage to begin.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Learning is finding out what you already know.",
@@ -4037,7 +4039,7 @@ const quotes = [
     },
     {
     "text": "What we see is mainly what we look for.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Stay away from what might have been and look at what will be.",
@@ -4145,7 +4147,7 @@ const quotes = [
     },
     {
     "text": "Don't wait for people to be friendly. Show them how.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "A gem cannot be polished without friction, nor a man perfected without trials.",
@@ -4249,7 +4251,7 @@ const quotes = [
     },
     {
     "text": "Don't let today's disappointments cast a shadow on tomorrow's dreams.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "You always succeed in producing a result.",
@@ -4277,7 +4279,7 @@ const quotes = [
     },
     {
     "text": "Never let lack of money interfere with having fun.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Excellence is not a skill. It is an attitude.",
@@ -4345,7 +4347,7 @@ const quotes = [
     },
     {
     "text": "He who has health has hope, and he who has hope has everything.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "All great achievements require time.",
@@ -4397,7 +4399,7 @@ const quotes = [
     },
     {
     "text": "The difficulties of life are intended to make us better, not bitter.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Quality means doing it right when no one is looking.",
@@ -4405,7 +4407,7 @@ const quotes = [
     },
     {
     "text": "Change your words. Change your world.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Great acts are made up of small deeds.",
@@ -4417,7 +4419,7 @@ const quotes = [
     },
     {
     "text": "Open minds lead to open doors.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "They can do all because they think they can.",
@@ -4445,7 +4447,7 @@ const quotes = [
     },
     {
     "text": "Each time we face a fear, we gain strength, courage, and confidence in the doing.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Ask yourself the secret of your success. Listen to your answer, and practice it.",
@@ -4557,7 +4559,7 @@ const quotes = [
     },
     {
     "text": "If you come to a fork in the road, take it.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "It is not only for what we do that we are held responsible, but also for what we do not do.",
@@ -4565,7 +4567,7 @@ const quotes = [
     },
     {
     "text": "Nobody can do everything, but everybody can do something.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "The world has the habit of making room for the man whose actions show that he knows where he is going.",
@@ -4625,7 +4627,7 @@ const quotes = [
     },
     {
     "text": "Why worry about tomorrow, when today is all we have?",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Speak when you are angry and you will make the best speech you will ever regret.",
@@ -4653,7 +4655,7 @@ const quotes = [
     },
     {
     "text": "Most smiles are started by another smile.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Nothing is softer or more flexible than water, yet nothing can resist it.",
@@ -4721,7 +4723,7 @@ const quotes = [
     },
     {
     "text": "When you lose, don't lose the lesson.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "If you want a thing done well, do it yourself.",
@@ -4749,7 +4751,7 @@ const quotes = [
     },
     {
     "text": "If I could reach up and hold a star for every time you've made me smile, the entire evening sky would be in the palm of my hand.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "We are shaped by our thoughts; we become what we think. When the mind is pure, joy follows like a shadow that never leaves.",
@@ -4785,7 +4787,7 @@ const quotes = [
     },
     {
     "text": "The steeper the mountain the harder the climb the better the view from the finishing line",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Aim for success, not perfection. Never give up your right to be wrong, because then you will lose the ability to learn new things and move forward with your life.",
@@ -4841,7 +4843,7 @@ const quotes = [
     },
     {
     "text": "Don't let what you can't do stop you from doing what you can do.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Complaining doesn't change a thing only taking action does.",
@@ -5181,7 +5183,7 @@ const quotes = [
     },
     {
     "text": "You can never cross the ocean unless you have the courage to lose sight of the shore.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Work for something because it is good, not just because it stands a chance to succeed.",
@@ -5353,7 +5355,7 @@ const quotes = [
     },
     {
     "text": "The best place to find a helping hand is at the end of your own arm.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "We know the truth, not only by the reason, but by the heart.",
@@ -5401,7 +5403,7 @@ const quotes = [
     },
     {
     "text": "Don't fear failure so much that you refuse to try new things. The saddest summary of life contains three descriptions: could have, might have, and should have.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "All fixed set patterns are incapable of adaptability or pliability. The truth is outside of all fixed patterns.",
@@ -5581,7 +5583,7 @@ const quotes = [
     },
     {
     "text": "We cannot direct the wind but we can adjust the sails.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "One may say the eternal mystery of the world is its comprehensibility.",
@@ -5809,7 +5811,7 @@ const quotes = [
     },
     {
     "text": "Giving up doesn't always mean you are weak; sometimes it means that you are strong enough to let go.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "To climb steep hills requires a slow pace at first.",
@@ -5845,7 +5847,7 @@ const quotes = [
     },
     {
     "text": "Many people have gone further than they thought they could because someone else thought they could.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "We read the world wrong and say that it deceives us.",
@@ -6093,7 +6095,7 @@ const quotes = [
     },
     {
     "text": "Never tell me the sky is the limit when there are footprints on the moon.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "I cannot say whether things will get better if we change; what I can say is they must change if they are to get better.",
@@ -6177,7 +6179,7 @@ const quotes = [
     },
     {
     "text": "Count your joys instead of your woes. Count your friends instead of your foes.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "Dreams come true. Without that possibility, nature would not incite us to have them.",
@@ -6373,7 +6375,7 @@ const quotes = [
     },
     {
     "text": "Beware of the half truth. You may have gotten hold of the wrong half.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "The greatest mistake you can make in life is to be continually fearing you will make one.",
@@ -6437,7 +6439,7 @@ const quotes = [
     },
     {
     "text": "It's not who you are that holds you back, it's who you think you're not.",
-    "author": null
+    "author": "unknown"
     },
     {
     "text": "All children are artists. The problem is how to remain an artist once he grows up.",
@@ -6572,5 +6574,3 @@ const quotes = [
     "author": "Tom Jackson"
     }
     ]
-
-export default quotes;
