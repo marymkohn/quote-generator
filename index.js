@@ -4,7 +4,7 @@ import {quotes} from './dummyAPI.js';
 const getRandom = (array) => {
 		let index = Math.floor(Math.random() * array.length);
 		return {
-				text: array[index].text,	author: array[index].author
+				text: array[index].text, author: array[index].author
 		};
 };
 
@@ -16,9 +16,6 @@ function showQuote() {
 		document.getElementById('quote-author').innerHTML = `- ${randomQuote.author}`;
 }
 // copies the random quote
-
-
-
 
 // event listener for generate button
 const button = document.getElementById('quote-button');
