@@ -45,6 +45,7 @@ button {
     background-color: skyblue;
     font-family: inherit;
     font-size: 1rem;
+    text-align: center;
     border-radius: 50px;
     margin: 1rem;
     width: 100px;
