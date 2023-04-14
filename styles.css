@@ -38,6 +38,9 @@ main {
     flex-direction: column;
     justify-content: space-around;
 }
+#copy-message {
+    color: skyblue;
+}
 button {
     background-color: skyblue;
     font-family: inherit;

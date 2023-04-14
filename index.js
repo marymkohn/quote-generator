@@ -28,11 +28,19 @@ function copyQuote() {
 		const fullQuote = `${quoteText} ${quoteAuthor}`;
 		navigator.clipboard.writeText(fullQuote).then(() => {
 				console.log('copied');
+				// alert user - copied
+				const copyMessage = document.getElementById('copy-message');
+				copyMessage.innerHTML = 'Copied!';
+				copyMessage.style.display = 'inline';
+
+				// Hide the message after 2 seconds
+				setTimeout(() => {
+						copyMessage.style.display = 'none';
+				}, 2000);
 		}).catch(err => {
 				console.error('Error: ', err);
 		});
 }
 // copy quote button
 const copyButton = document.getElementById('copy-button');
-let copy= `${getRandom.toString()}`;
 copyButton.addEventListener('click',copyQuote);
