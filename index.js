@@ -8,19 +8,31 @@ const getRandom = (array) => {
 		};
 };
 
-// DOM Functions
+// DOM Function
 // generates the random quote
 function showQuote() {
 		const randomQuote = getRandom(quotes);
 		document.getElementById('quote-text').innerHTML = `"${randomQuote.text}"`;
 		document.getElementById('quote-author').innerHTML = `- ${randomQuote.author}`;
 }
-// copies the random quote
+// event listener
+// button - generate quote 
+const generateButton = document.getElementById('quote-button');
+generateButton.addEventListener('click',showQuote);
 
-// event listener for generate button
-const button = document.getElementById('quote-button');
-button.addEventListener('click',showQuote);
-
-// event listener for copy button
+//DOM Function
+// copies generated quote
+function copyQuote() {
+		const quoteText = document.getElementById('quote-text').innerText;
+		const quoteAuthor = document.getElementById('quote-author').innerText;
+		const fullQuote = `${quoteText} ${quoteAuthor}`;
+		navigator.clipboard.writeText(fullQuote).then(() => {
+				console.log('copied');
+		}).catch(err => {
+				console.error('Error: ', err);
+		});
+}
+// copy quote button
 const copyButton = document.getElementById('copy-button');
+let copy= `${getRandom.toString()}`;
 copyButton.addEventListener('click',copyQuote);
