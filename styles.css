@@ -1,9 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Rock+Salt&display=swap');
+:root {
+    --headerfont: 'Rock Salt', Arial, sans-serif;
+    --bodyfont: 'Poppins', Arial, sans-serif;
+    --background: #011140; /* oxford blue */
+    --mainText: #E0E0E0; /* gray - main text */
+    --button: #466C8C; /* steel blue - font headings, buttons, active */
+    --hover: #F2937E; /* salmon - contact, view project, hover */
+    --heading: #D96B62; /* burnt sienna - subheadings, borders */
+    --label: #A65656; /* brick red - tags, labels, icons */
+}
 
-body {
-    background-color: #000;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
+
+html body {
+    background-color: var(--background);
+    color: var(--mainText);
+    font-family: var(--bodyfont);
     font-size: 18px;
     padding: 20px;
     display: flex;
@@ -14,13 +24,14 @@ body {
 }
 
 header {
-    font-family: 'Rock Salt', 'Poppins', sans-serif;
+    font-family: var(--headerfont);
+    color: var(--heading);
     font-size: 1rem;
     text-align: center;
 }
 
 main {
-    border: .1rem skyblue inset;
+    border: .5rem double var(--heading);
     width: 80%;
     height: 60vh;
     padding: 1.5rem;
@@ -31,18 +42,18 @@ main {
 }
 
 #quote-section {
-    background-color: #232323;
-    border: 1px skyblue dashed;
+    background-color: var(--button);
+    border: .25rem dashed var(--heading);
     height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 #copy-message {
-    color: skyblue;
+    color: var(--hover);
 }
 button {
-    background-color: skyblue;
+    background-color: var(--button);
     font-family: inherit;
     font-size: 1rem;
     border-radius: 55px;
@@ -53,8 +64,8 @@ button {
     align-items: center;
 }
 button:hover {
-    background-color: black;
-    color: skyblue;
+    background-color: var(--hover);
+    color: var(--mainText);
 }
 footer {
     text-align: center;
