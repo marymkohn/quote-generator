@@ -7,10 +7,10 @@ generateQuote.addEventListener('click', () => {
 		const selectedCategory = document.getElementById('category-selection');
 		const userCategory = selectedCategory.value;
 		getQuotes(userCategory).then(randomQuote => {
-				console.log('Random Quote: ', randomQuote);
 				showQuote(randomQuote);
 	});
 });
+
 
 // event listener - copies the quote and author
 const copyButton = document.getElementById('copy-button');

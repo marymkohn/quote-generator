@@ -1,14 +1,17 @@
 :root {
     --headerfont: 'Rock Salt', Arial, sans-serif;
     --bodyfont: 'Poppins', Arial, sans-serif;
-    --background: #011140; /* oxford blue */
-    --mainText: #E0E0E0; /* gray - main text */
-    --button: #466C8C; /* steel blue - font headings, buttons, active */
-    --hover: #F2937E; /* salmon - contact, view project, hover */
-    --heading: #D96B62; /* burnt sienna - subheadings, borders */
-    --label: #A65656; /* brick red - tags, labels, icons */
+    --background: #232946;
+    --mainText: #121629;
+    --heading: #fffffe;
+    --border: #fffffe;
+    --button: #eebbc3;
+    --hover: #b8c1ec;
 }
 
+* {
+    /*box-sizing: border-box;*/
+}
 
 html body {
     background-color: var(--background);
@@ -26,56 +29,83 @@ html body {
 header {
     font-family: var(--headerfont);
     color: var(--heading);
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 main {
-    border: .5rem double var(--heading);
+    border: .5rem double var(--border);
     width: 80%;
-    height: 60vh;
+    height: 50vh;
     padding: 1.5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
-#quote-section {
+/* CATEGORY & BUTTONS */
+#category-selection, button {
     background-color: var(--button);
-    border: .25rem dashed var(--heading);
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-#copy-message {
-    color: var(--hover);
-}
-button {
-    background-color: var(--button);
+    color: var(--mainText);
     font-family: inherit;
     font-size: 1rem;
-    border-radius: 55px;
-    margin: 1rem;
-    width: 110px;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-button:hover {
-    background-color: var(--hover);
-    color: var(--mainText);
-}
-footer {
-    text-align: center;
-    font-size: .9rem;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+    width: auto;
+    height: 2rem;
 }
 
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
+#category-selection:hover, button:hover {
+    background-color: var(--hover);
+}
+
+/* QUOTE SECTION */
+#quote-section {
+    background-color: var(--button);
+    border: .25rem dashed var(--border);
+    height: 80%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#typing-container {
+    width: 100%;
+}
+
+.char {
+    display: none;
+    white-space: pre;
     overflow: hidden;
+    max-width: none;
+}
+
+.last-char {
+    border-right: .1rem solid var(--mainText);
+    animation: blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: auto;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+#copy-message {
+    color: var(--background);
+}
+
+footer {
+    text-align: center;
+    font-size: .75rem;
 }
