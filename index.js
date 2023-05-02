@@ -1,12 +1,20 @@
 import {getQuotes} from "./fetchQuotes.js";
+import {showQuote} from "./fetchQuotes.js";
 
-// calls the API, gets a random quote from the API
-export function showQuote(randomQuote) {
-		const showText = document.getElementById('quote');
-		const showAuthor = document.getElementById('author');
-		showText.innerHTML = randomQuote.quote;
-		showAuthor.innerHTML = randomQuote.author;
-}
+// event listener - takes category selection on 'generate quote' click
+const generateQuote = document.getElementById('quote-button');
+generateQuote.addEventListener('click', () => {
+		const selectedCategory = document.getElementById('category-selection');
+		const userCategory = selectedCategory.value;
+		getQuotes(userCategory).then(randomQuote => {
+				console.log('Random Quote: ', randomQuote);
+				showQuote(randomQuote);
+	});
+});
+
+// event listener - copies the quote and author
+const copyButton = document.getElementById('copy-button');
+copyButton.addEventListener('click',copyQuote);
 
 // copies the displayed quote
 function copyQuote() {
@@ -28,15 +36,3 @@ function copyQuote() {
 				console.error('Error: ', err);
 		});
 }
-
-// event listener - takes category selection on 'generate quote' click
-const generateQuote = document.getElementById('quote-button');
-generateQuote.addEventListener('click', () => {
-		const selectedCategory = document.getElementById('category-selection');
-		const userCategory = selectedCategory.value;
-		getQuotes(userCategory).then(randomQuote => showQuote(randomQuote));
-});
-
-// event listener - copies the quote and author
-const copyButton = document.getElementById('copy-button');
-copyButton.addEventListener('click',copyQuote);
