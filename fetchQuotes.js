@@ -1,18 +1,19 @@
-const apiUrl = "https://api.api-ninjas.com/v1/quotes";
-// Selects page elements
-const inputField = document.querySelector('#input');
-const submit = document.querySelector('#submit');
-const apiResponse = document.querySelector('#apiResponse');
+import {showQuote} from "./index.js";
 
-// Asynchronous function
-async function getQuotes () {
+const apiUrl = "https://api.api-ninjas.com/v1/quotes/";
+const apiKey = "";
+
+// calling the quotes API async
+export async function getQuotes (userCategory) {
+    let randomQuote;
+
     try {
-        const endpoint = `${apiUrl}${inputField.value}`;
-        const quotesJSON = await fetch(endpoint);
-        let data = await endpoint.json();
+        const categoryUrl = `?category=${userCategory}`;
+        const quoteJSON = await fetch(`${apiUrl}${categoryUrl}${apiKey}`);
+        randomQuote = await quoteJSON.json();
+        return randomQuote;
 
-    } catch(err) {
+    } catch (err) {
         console.error(err);
     }
 }
-

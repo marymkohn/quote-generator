@@ -1,37 +1,26 @@
-// Utility Function: generates a random quote from the quotes array
-const getRandom = (array) => {
-		let index = Math.floor(Math.random() * array.length);
-		return {
-				text: array[index].text, author: array[index].author
-		};
-};
+import {getQuotes} from "./fetchQuotes.js";
 
-// DOM Function
-// generates the random quote
-function showQuote() {
-		const randomQuote = getRandom(quotes);
-		document.getElementById('quote-text').innerHTML = `"${randomQuote.text}"`;
-		document.getElementById('quote-author').innerHTML = `- ${randomQuote.author}`;
+// calls the API, gets a random quote from the API
+export function showQuote(randomQuote) {
+		const showText = document.getElementById('quote');
+		const showAuthor = document.getElementById('author');
+		showText.innerHTML = randomQuote.quote;
+		showAuthor.innerHTML = randomQuote.author;
 }
-// event listener
-// button - generate quote 
-const generateButton = document.getElementById('quote-button');
-generateButton.addEventListener('click',showQuote);
 
-//DOM Function
-// copies generated quote
+// copies the displayed quote
 function copyQuote() {
-		const quoteText = document.getElementById('quote-text').innerText;
-		const quoteAuthor = document.getElementById('quote-author').innerText;
-		const fullQuote = `${quoteText} ${quoteAuthor}`;
+		const quote = document.getElementById('quote').innerText;
+		const author = document.getElementById('author').innerText;
+		const fullQuote = `${quote} ${author}`;
+
+		// alerts user that the quote was copied
 		navigator.clipboard.writeText(fullQuote).then(() => {
-				console.log('copied');
-				// alert user - copied
 				const copyMessage = document.getElementById('copy-message');
 				copyMessage.innerHTML = 'Copied!';
 				copyMessage.style.display = 'inline';
 
-				// Hide the message after 2 seconds
+				// Hide the alert after 2 seconds
 				setTimeout(() => {
 						copyMessage.style.display = 'none';
 				}, 2000);
@@ -39,6 +28,15 @@ function copyQuote() {
 				console.error('Error: ', err);
 		});
 }
-// copy quote button
+
+// event listener - takes category selection on 'generate quote' click
+const generateQuote = document.getElementById('quote-button');
+generateQuote.addEventListener('click', () => {
+		const selectedCategory = document.getElementById('category-selection');
+		const userCategory = selectedCategory.value;
+		getQuotes(userCategory).then(randomQuote => showQuote(randomQuote));
+});
+
+// event listener - copies the quote and author
 const copyButton = document.getElementById('copy-button');
 copyButton.addEventListener('click',copyQuote);
