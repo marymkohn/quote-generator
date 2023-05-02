@@ -1,5 +1,3 @@
-import {quotes} from './dummyAPI.js';
-
 // Utility Function: generates a random quote from the quotes array
 const getRandom = (array) => {
 		let index = Math.floor(Math.random() * array.length);
