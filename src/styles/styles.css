@@ -4,9 +4,9 @@
     --background: #232946;
     --mainText: #121629;
     --heading: #fffffe;
-    --border: #fffffe;
-    --button: #eebbc3;
-    --hover: #b8c1ec;
+    --border: #eebbc3;
+    --hover: #eebbc3;
+    --button: #b8c1ec;
 }
 
 * {
@@ -61,10 +61,21 @@ main {
     background-color: var(--hover);
 }
 
+#copy-button {
+    background-color: transparent;
+    position: absolute;
+        top: 20rem;
+    width: 2rem;
+}
+
+#copy-button:hover {
+    background-color: var(--hover);
+}
+
 /* QUOTE SECTION */
 #quote-section {
     background-color: var(--button);
-    border: .25rem dashed var(--border);
+    border: .25rem dashed var(--background);
     height: auto;
     min-height: 30rem;
     padding: 1rem;

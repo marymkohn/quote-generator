@@ -104,22 +104,24 @@
         <button aria-label="Click to generate a random quote" id="quote-button">
             Generate
         </button>
-        <!-- Copy Button -->
-        <button aria-label="Click to copy quote" id="copy-button">
-            Copy
-        </button>
     </section>
     <!--  Quote Section  -->
     <section aria-labelledby="quote-section" id="quote-section">
+        <!-- Copy Button -->
+        <button aria-label="Click to copy quote" id="copy-button" title="copy quote">
+            <i class="fa-solid fa-clipboard"></i>
+        </button>
+        <!-- Quote Text -->
         <div>
             <span id="quote"></span>
         </div>
+        <!-- Author Name -->
         <div>
             <span id="author"></span>
         </div>
+        <!-- Copy Message -->
         <span id="copy-message" style="display: none;"></span>
     </section>
-
 </main>
 <footer>
     <p>&copy; 2023. Mary Kohn. Quote Me! All rights reserved.</p>
