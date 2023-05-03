@@ -10,7 +10,7 @@
 }
 
 * {
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
 }
 
 html body {
@@ -36,11 +36,13 @@ header {
 main {
     border: .5rem double var(--border);
     width: 80%;
-    height: 50vh;
+    height: auto;
+    min-height: 30rem;
     padding: 1.5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 /* CATEGORY & BUTTONS */
@@ -63,46 +65,23 @@ main {
 #quote-section {
     background-color: var(--button);
     border: .25rem dashed var(--border);
-    height: 80%;
+    height: auto;
+    min-height: 30rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#typing-container {
+#quote-content {
+    color: var(--mainText);
+    display: inline;
     width: 100%;
-}
-
-.char {
-    display: none;
-    white-space: pre;
-    overflow: hidden;
-    max-width: none;
-}
-
-.last-char {
-    border-right: .1rem solid var(--mainText);
-    animation: blink 0.5s step-end infinite;
-}
-
-@keyframes typing {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: auto;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+    flex-wrap: wrap;
 }
 
 #copy-message {
-    color: var(--background);
+    color: var(--mainText);
 }
 
 footer {

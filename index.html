@@ -11,12 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rock+Salt&display=swap" rel="stylesheet">
 
     <!--  javascript  -->
-    <script src="fetchQuotes.js" type="module" defer></script>
-    <script src="index.js" type="module" defer></script>
-    <script src="https://kit.fontawesome.com/8d11417666.js" crossorigin="anonymous"></script>
+    <script src="src/js/fetchQuotes.js" type="module" defer></script>
+    <script src="src/js/index.js" type="module" defer></script>
+    <script src="src/js/showQuote.js" type="module" defer></script>
+    <script src="src/js/copyQuote.js" type="module" defer></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/8d11417666.js" type="module" crossorigin="anonymous" defer></script>
 
     <!--  stylesheets  -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
 </head>
 
 <body>
@@ -102,15 +105,21 @@
             Generate
         </button>
         <!-- Copy Button -->
-<!--        <button aria-label="Click to copy quote" id="copy-button">-->
-<!--            Copy-->
-<!--        </button>-->
+        <button aria-label="Click to copy quote" id="copy-button">
+            Copy
+        </button>
     </section>
     <!--  Quote Section  -->
     <section aria-labelledby="quote-section" id="quote-section">
-        <div id="typing-container"></div>
+        <div>
+            <span id="quote"></span>
+        </div>
+        <div>
+            <span id="author"></span>
+        </div>
         <span id="copy-message" style="display: none;"></span>
     </section>
+
 </main>
 <footer>
     <p>&copy; 2023. Mary Kohn. Quote Me! All rights reserved.</p>
