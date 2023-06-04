@@ -2,7 +2,7 @@
   "name": "quote-generator",
   "version": "1.0.0",
   "dependencies": {
-    "typed.js": "^2.0.16"
+    "typed.js": "^2.0.132"
   },
   "type": "module"
 }
