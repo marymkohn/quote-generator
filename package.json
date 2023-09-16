@@ -4,5 +4,8 @@
   "dependencies": {
     "typed.js": "^2.0.132"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@types/typed.js": "^2.0.9"
+  }
 }
