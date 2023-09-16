@@ -17,7 +17,6 @@ import { copyQuote } from "./copyQuote";
             const userCategory: string = categorySelection.value;
             fetchQuotes(userCategory)
                 .then(fetchedQuote => {
-                    // @ts-ignore
                     randomQuote = fetchedQuote;
                     if (copyButton) {
                         copyButton.onclick = () => copyQuote(randomQuote);
