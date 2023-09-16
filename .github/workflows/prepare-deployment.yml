@@ -16,8 +16,7 @@ jobs:
 
     - name: Replace API Key
       run: |
-        sed -i 's/REPLACE_WITH_API_KEY/${{ secrets.API_KEY_NINJAS }}/g' ./src/ts/fetchQuotes.ts
-
+        sed -i.bak 's/REPLACE_WITH_API_KEY/${{ secrets.API_KEY_NINJAS }}/g' ./src/ts/fetchQuotes.ts && rm ./src/ts/fetchQuotes.ts.bak
     - name: Commit changes
       run: |
         git config --local user.email "marjoriekohn@icloud.com"
