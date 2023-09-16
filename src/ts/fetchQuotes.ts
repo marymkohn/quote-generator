@@ -3,7 +3,7 @@ import { showQuote } from "./showQuote";
 
 // TODO: store the API key in a .env file
 const apiUrl = "https://api.api-ninjas.com/v1/quotes?category=";
-const apiKey = "TpCqkPr8iaHZUb/bUXKmBA==QQzQ2STCuoPv9TDt";
+const apiKey = "API_KEY";
 
 /**
  * Fetches a random quote based on the user's chosen category.
