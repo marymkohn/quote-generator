@@ -14,7 +14,6 @@ type Quote = {
     const quoteButton = document.getElementById('quote-button');
     const copyButton = document.getElementById('copy-button');
     const categorySelection = document.getElementById('category-selection') as HTMLSelectElement;
-
     let randomQuote: Quote = { quote: '', author: '' };
 
     if (quoteButton && categorySelection) {

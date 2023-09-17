@@ -1,8 +1,4 @@
-[[redirects]]
-debug = true
-from = "/api/*"
-to = "https://api.api-ninjas.com/v1:splat"
-status = 200
-force = true
-headers = {X-Api-Key = "${API_KEY}"}
-query = {category = ":category"}
+[build]
+command = "npm run build"
+functions = "netlify/functions"
+publish = "frontend/dist"

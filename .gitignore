@@ -6,3 +6,5 @@ node_modules
 .idea/vcs.xml
 .idea/webResources.xml
 .idea/workspace.xml
+.env
+.netlify
