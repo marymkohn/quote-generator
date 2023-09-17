@@ -3,7 +3,8 @@
  */
 import { fetchQuotes } from './fetchQuotes.js';
 import { copyQuote } from "./copyQuote.js";
-import { showQuote } from "./showQuote";
+import { showQuote } from "./showQuote.js";
+
 (function setupListeners() {
     const quoteButton = document.getElementById('quote-button');
     const copyButton = document.getElementById('copy-button');

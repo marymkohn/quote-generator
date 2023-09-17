@@ -3,7 +3,6 @@
  * @param userCategory - The category chosen by the user.
  */
 import { handleError } from "./handleError.js";
-import axios from "axios";
 export async function fetchQuotes(userCategory) {
     try {
         let response = await axios.get(`/.netlify/functions/apiCall`, {
