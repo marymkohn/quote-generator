@@ -1,7 +1,8 @@
-
-*.idea
 .git
 .idea/quote-generator.iml
 .idea/jsLibraryMappings.xml
 node_modules
-package-lock.json
+.idea/modules.xml
+.idea/vcs.xml
+.idea/webResources.xml
+.idea/workspace.xml

@@ -4,7 +4,7 @@
     "outDir": "./src/dist",
     "target": "es5",
     "strict": true,
-    "moduleResolution": "nodenext",
+//    "moduleResolution": "nodenext",
     "sourceMap": true
   },
   "include": [

@@ -1,4 +1,6 @@
-import Typed from "typed.js";
+// import Typed from "typed.js";
+
+import Typed from "../../node_modules/typed.js/index";
 
 /**
  * Displays the fetched quote and author on the page with typing animation.
