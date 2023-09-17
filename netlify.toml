@@ -1,4 +1,5 @@
 [[redirects]]
+debug = true
 from = "/api/*"
 to = "https://api.api-ninjas.com/v1/:splat"
 status = 200

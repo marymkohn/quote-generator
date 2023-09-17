@@ -36,7 +36,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 import { handleError } from "./handleError.js";
 import { showQuote } from "./showQuote.js";
-// TODO: store the API key in a .env file
 /**
  * Fetches a random quote based on the user's chosen category.
  * @param userCategory - The category chosen by the user.
