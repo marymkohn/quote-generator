@@ -1,3 +1,0 @@
-/api/quotes category=:userCategory https://api.api-ninjas.com/v1/quotes?category=:userCategory 200! X-Api-Key: ${API_KEY}
-
-
