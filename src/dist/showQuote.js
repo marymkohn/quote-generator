@@ -1,5 +1,3 @@
-// import Typed from "typed.js";
-import Typed from "typed.js";
 /**
  * Displays the fetched quote and author on the page with typing animation.
  * @param randomQuote - An object containing quote and author.
