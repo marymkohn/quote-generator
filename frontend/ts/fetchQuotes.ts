@@ -3,7 +3,7 @@
  * @param userCategory - The category chosen by the user.
  */
 
-import {handleError} from "./handleError";
+import {handleError} from "./handleError.js";
 import axios from "axios";
 
 type Quote = {

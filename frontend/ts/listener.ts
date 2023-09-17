@@ -1,14 +1,14 @@
-import { fetchQuotes } from './fetchQuotes';
-import { copyQuote } from "./copyQuote";
-
 /**
  * Sets up event listeners for the quote application.
  */
+import { fetchQuotes } from './fetchQuotes.js';
+import { copyQuote } from "./copyQuote.js";
+import {showQuote} from "./showQuote";
+
 type Quote = {
     quote: string;
     author: string;
 };
-
 
 (function setupListeners(): void {
     const quoteButton = document.getElementById('quote-button');
@@ -22,6 +22,7 @@ type Quote = {
             fetchQuotes(userCategory)
                 .then(fetchedQuote => {
                     randomQuote = fetchedQuote;
+                    showQuote(randomQuote);
                     if (copyButton) {
                         copyButton.onclick = () => copyQuote(randomQuote);
                     }

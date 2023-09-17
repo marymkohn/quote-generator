@@ -1,10 +1,8 @@
-import {showMessage} from "./showMessage";
-
 /**
  * Centralized error handling function.
  * @param error - The error object to be handled.
  */
-
+import {showMessage} from "./showMessage.js";
 export function handleError(error: unknown): void {
     if (error instanceof Error) {
         console.error('An error occurred:', error.message);
