@@ -1,5 +1,5 @@
-import { fetchQuotes } from './fetchQuotes';
-import { copyQuote } from "./copyQuote";
+import { fetchQuotes } from './fetchQuotes.js';
+import { copyQuote } from "./copyQuote.js";
 (function setupListeners() {
     var quoteButton = document.getElementById('quote-button');
     var copyButton = document.getElementById('copy-button');

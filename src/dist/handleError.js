@@ -1,4 +1,4 @@
-import { showMessage } from "./showMessage";
+import { showMessage } from "./showMessage.js";
 /**
  * Centralized error handling function.
  * @param error - The error object to be handled.
