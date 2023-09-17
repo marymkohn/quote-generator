@@ -1,1 +1,3 @@
-/api/*  https://api.api-ninjas.com/v1/:splat  200!  X-Api-Key: ${API_KEY}
+/api/quotes category=:userCategory https://api.api-ninjas.com/v1/quotes?category=:userCategory 200! X-Api-Key: ${API_KEY}
+
+
