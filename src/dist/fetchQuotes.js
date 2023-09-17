@@ -37,8 +37,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 import { handleError } from "./handleError.js";
 import { showQuote } from "./showQuote.js";
 // TODO: store the API key in a .env file
-var apiUrl = "https://api.api-ninjas.com/v1/quotes?category=";
-var apiKey = "API_KEY";
 /**
  * Fetches a random quote based on the user's chosen category.
  * @param userCategory - The category chosen by the user.
@@ -53,11 +51,7 @@ export function fetchQuotes(userCategory) {
                     _a.label = 1;
                 case 1:
                     _a.trys.push([1, 4, , 5]);
-                    return [4 /*yield*/, fetch(apiUrl + userCategory, {
-                            headers: {
-                                'X-Api-Key': apiKey,
-                            },
-                        })];
+                    return [4 /*yield*/, fetch('/api/quotes?category=' + userCategory)];
                 case 2:
                     quotesResponse = _a.sent();
                     return [4 /*yield*/, quotesResponse.json()];
