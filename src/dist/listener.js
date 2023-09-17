@@ -1,5 +1,5 @@
-import { fetchQuotes } from './fetchQuotes';
-import { copyQuote } from "./copyQuote";
+import { fetchQuotes } from './fetchQuotes.js';
+import { copyQuote } from "./copyQuote.js";
 /**
  * Sets up event listeners for the quote application.
  */

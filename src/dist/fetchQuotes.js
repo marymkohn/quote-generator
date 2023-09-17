@@ -34,8 +34,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import { handleError } from "./handleError";
-import { showQuote } from "./showQuote";
+import { handleError } from "./handleError.js";
+import { showQuote } from "./showQuote.js";
 // TODO: store the API key in a .env file
 var apiUrl = "https://api.api-ninjas.com/v1/quotes?category=";
 var apiKey = "API_KEY";
