@@ -1,4 +1,4 @@
-import {handleError} from "../../frontend/ts/handleError";
+import {handleError} from "../../frontend/ts/handleError.js";
 import axios from 'axios';
 
 interface NetlifyEvent {
