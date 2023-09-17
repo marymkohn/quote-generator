@@ -1,5 +1,5 @@
-import { showMessage } from './showMessage.js';
-import { handleError } from "./handleError.js";
+import { showMessage } from './showMessage';
+import { handleError } from "./handleError";
 /**
  * Copies the displayed quote to the clipboard.
  * @param randomQuote - An object containing quote and author.

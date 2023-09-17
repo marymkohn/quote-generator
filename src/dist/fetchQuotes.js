@@ -34,37 +34,28 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-import { handleError } from "./handleError.js";
-import { showQuote } from "./showQuote.js";
-/**
- * Fetches a random quote based on the user's chosen category.
- * @param userCategory - The category chosen by the user.
- */
+import { handleError } from "./handleError";
+import { showQuote } from "./showQuote";
 export function fetchQuotes(userCategory) {
     return __awaiter(this, void 0, void 0, function () {
-        var randomQuote, quotesResponse, quotesData, randomIndex, err_1;
+        var quotesResponse, randomQuote, err_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    randomQuote = { quote: '', author: '' };
-                    _a.label = 1;
-                case 1:
-                    _a.trys.push([1, 4, , 5]);
+                    _a.trys.push([0, 3, , 4]);
                     return [4 /*yield*/, fetch('/api/quotes?category=' + userCategory)];
-                case 2:
+                case 1:
                     quotesResponse = _a.sent();
                     return [4 /*yield*/, quotesResponse.json()];
-                case 3:
-                    quotesData = _a.sent();
-                    randomIndex = Math.floor(Math.random() * quotesData.length);
-                    randomQuote = quotesData[randomIndex];
+                case 2:
+                    randomQuote = _a.sent();
                     showQuote(randomQuote);
-                    return [3 /*break*/, 5];
-                case 4:
+                    return [2 /*return*/, randomQuote];
+                case 3:
                     err_1 = _a.sent();
                     handleError(err_1);
-                    return [3 /*break*/, 5];
-                case 5: return [2 /*return*/];
+                    throw err_1;
+                case 4: return [2 /*return*/];
             }
         });
     });

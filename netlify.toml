@@ -1,8 +1,8 @@
 [[redirects]]
 debug = true
 from = "/api/*"
-to = "https://api.api-ninjas.com/v1/:splat"
+to = "https://api.api-ninjas.com/v1:splat"
 status = 200
 force = true
 headers = {X-Api-Key = "${API_KEY}"}
-query = {category = ":userCategory"}
+query = {category = ":category"}
