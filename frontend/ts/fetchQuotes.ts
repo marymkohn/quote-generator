@@ -16,7 +16,7 @@ export async function fetchQuotes(userCategory: string): Promise<Quote> {
         let response = await axios.get(`/.netlify/functions/apiCall`, {
             params: { userCategory: userCategory },
         });
-        return response.data;
+        return response.data[0];
     } catch (err: any) {
         handleError(err);
         return err.message;
