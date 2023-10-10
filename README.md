@@ -7,7 +7,7 @@ A simple yet elegant Random Quote Generator built with TypeScript. It fetches qu
 - Developed using TypeScript for enhanced type safety and a better developer experience.
 
 ## Demo:
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2001d992-20c9-40e3-9ffc-a473d64bc40e/deploy-status)](https://app.netlify.com/sites/marjorie-kohn-quote-generator/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2001d992-20c9-40e3-9ffc-a473d64bc40e/deploy-status)](https://app.netlify.com/sites/marjoriekohn-quotes/deploys)
 - Visit the deployed app [quotes.marjoriekohn.com](https://quotes.marjoriekohn.com).
 - Select a category (optional).
 - Click the "Generate Quote" button.
